@@ -10,21 +10,22 @@ The project was developed as part of a **Computer Networks Course** and focuses 
 ## Methodology
 
 ### Dataset
-Network traffic data was collected from four sources:
-- output-of-benign-pcap-0
-- output-of-malware-pcap
-- output-of-phishing-pcap
-- output-of-spam-pcap
+The dataset used in this project was obtained from Kaggle:
 
-Each flow is labeled as:
-- `0` → Benign  
-- `1` → Malicious
+**Malicious DNS and Attacks – BCCC-CIC-Bell-DNS-Mal**  
+Source: https://www.kaggle.com/datasets/bcccdatasets/malicious-dns-and-attacks-bccc-cic-bell-dns-2024
 
-To address class imbalance:
-- Benign samples: **75,000**
-- Malicious samples: **25,000**
+The dataset contains extracted network flow features derived from packet capture (PCAP) files and includes traffic from multiple sources:
+- `output-of-benign-pcap-0.csv`
+- `output-of-malware-pcap.csv`
+- `output-of-phishing-pcap.csv`
+- `output-of-spam-pcap.csv`
+  
+Each traffic flow was labeled to formulate a **binary classification problem**, where:
+- `0` represents benign traffic  
+- `1` represents malicious traffic  
 
-> Raw CSV files are intentionally excluded from this repository due to size and data handling considerations.
+> Due to dataset size and licensing constraints, the raw CSV files are **not included** in this repository.
 
 ---
 
